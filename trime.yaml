@@ -1,5 +1,5 @@
 config_version: "3.0"
-name: 092全键          #方案名称
+name: 092全键·高          #方案名称
 author: 往风        #作者信息
 
 #键盘高度等
@@ -40,7 +40,7 @@ style:
   latin_font: latin.ttf #西文本体
   latin_locale: en_US #西文语言
   locale: zh_CN #缺省语言 zh_TW,zh_CN,zh_HK,""
-  keyboard_height: 250 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
+  keyboard_height: 330 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
   keyboard_height_land: 160 #锁定横屏下键盘高度，避免切换时键盘高度变化而造成闪烁
   preview_font: latin.ttf #按键提示字体
   preview_height: 56 #按键提示高度
@@ -287,7 +287,7 @@ preset_keyboards:
       - {click: "'", long_click: "“”"}  
     #  - {width: 4.4}
       # 第四行
-      - {click: english2, width: 10, key_back_color: gnj, key_text_color: gnz}
+      - {click: Mode_switch, width: 10, key_back_color: gnj, key_text_color: gnz}
       - {click: z, label: "Z"}
       - {click: x, label: "X", long_click: "cut"}
       - {click: c, label: "C", long_click: "copy"}
@@ -304,6 +304,10 @@ preset_keyboards:
       - {click: space, width: 40}
       - {click: "BackSpace", label: "⌫", swipe_up: "ClearH", width: 15, key_back_color: gnj, key_text_color: gnz}
       - {click: Return, width: 15, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   english2:
     name: "英文键盘2"
@@ -374,6 +378,10 @@ preset_keyboards:
       - {click: space, width: 40}
       - {click: "BackSpace", label: "⌫", swipe_up: "ClearH", width: 15, key_back_color: gnj, key_text_color: gnz}
       - {click: Return, width: 15, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
 
   english:
@@ -423,6 +431,10 @@ preset_keyboards:
       - {click: space, width: 42}
       - {click: DefaultKeyboard2, width: 12}
       - {click: Return, width: 20}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   number:
     name: "苹果数字键盘"
@@ -467,6 +479,10 @@ preset_keyboards:
       - {click: DefaultKeyboard, width: 25}
       - {click: space, width: 50}
       - {click: Return, width: 25}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols:
     name: "苹果符号键盘"
@@ -511,6 +527,10 @@ preset_keyboards:
       - {click: DefaultKeyboard, width: 25}
       - {click: space, width: 50}
       - {click: Return, width: 25}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
 # 符号键盘
   symbols01:
@@ -551,6 +571,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols02:
     name: "功能2"
@@ -590,6 +614,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols11:
     name: "英文1"
@@ -629,6 +657,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols12:
     name: "英文2"
@@ -668,6 +700,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols13:
     name: "英文3"
@@ -707,6 +743,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols14:
     name: "英文4"
@@ -746,6 +786,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols21:
     name: "中文1"
@@ -785,6 +829,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols22:
     name: "中文2"
@@ -824,6 +872,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols31:
     name: "颜文1"
@@ -863,6 +915,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols32:
     name: "颜文2"
@@ -902,6 +958,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols33:
     name: "颜文3"
@@ -941,6 +1001,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols34:
     name: "颜文4"
@@ -980,6 +1044,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols35:
     name: "颜文5"
@@ -1019,6 +1087,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols36:
     name: "颜文6"
@@ -1058,6 +1130,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols41:
     name: "Emoji1"
@@ -1105,6 +1181,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols42:
     name: "Emoji2"
@@ -1152,6 +1232,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols43:
     name: "Emoji3"
@@ -1199,6 +1283,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols44:
     name: "Emoji4"
@@ -1246,6 +1334,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols51:
     name: "特殊1"
@@ -1293,6 +1385,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols52:
     name: "特殊2"
@@ -1340,6 +1436,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols53:
     name: "特殊3"
@@ -1387,6 +1487,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols54:
     name: "特殊4"
@@ -1434,6 +1538,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols55:
     name: "特殊5"
@@ -1481,6 +1589,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols56:
     name: "特殊6"
@@ -1528,6 +1640,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols61:
     name: "数学1"
@@ -1575,6 +1691,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols62:
     name: "数学2"
@@ -1622,6 +1742,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols63:
     name: "数学3"
@@ -1669,6 +1793,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols64:
     name: "数学4"
@@ -1716,6 +1844,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols65:
     name: "数学5"
@@ -1763,6 +1895,10 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols60, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols71:
     name: "序号1"
@@ -1806,6 +1942,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols72:
     name: "序号2"
@@ -1849,6 +1989,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols73:
     name: "序号3"
@@ -1892,6 +2036,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols74:
     name: "序号4"
@@ -1935,6 +2083,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols75:
     name: "序号5"
@@ -1978,6 +2130,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols81:
     name: "制表1"
@@ -2025,6 +2181,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols82:
     name: "制表2"
@@ -2072,6 +2232,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols83:
     name: "制表3"
@@ -2119,6 +2283,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols91:
     name: "注音1"
@@ -2166,6 +2334,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols92:
     name: "注音2"
@@ -2213,6 +2385,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols93:
     name: "注音3"
@@ -2260,6 +2436,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsA1:
     name: "希腊1"
@@ -2307,6 +2487,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsA2:
     name: "希腊2"
@@ -2354,6 +2538,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsA3:
     name: "俄文1"
@@ -2401,6 +2589,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsA4:
     name: "俄文2"
@@ -2448,6 +2640,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsA5:
     name: "俄文3"
@@ -2495,6 +2691,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsB1:
     name: "拉丁1"
@@ -2542,6 +2742,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsB2:
     name: "拉丁2"
@@ -2589,6 +2793,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsB3:
     name: "拉丁3"
@@ -2636,6 +2844,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsC1:
     name: "韩文1"
@@ -2683,6 +2895,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsC2:
     name: "韩文2"
@@ -2730,6 +2946,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsC3:
     name: "韩文3"
@@ -2777,6 +2997,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsC4:
     name: "韩文4"
@@ -2824,6 +3048,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsC5:
     name: "韩文5"
@@ -2871,6 +3099,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsD1:
     name: "音标1"
@@ -2918,6 +3150,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbolsD2:
     name: "音标2"
@@ -2965,6 +3201,10 @@ preset_keyboards:
       - {click: K_symbolsC0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbolsD0, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0z, width: 12.5, key_back_color: gnj, key_text_color: gnz}
+      # 虚拟第六行（抬高行）
+      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
 # 剪贴板
 liquid_keyboard:
@@ -2977,20 +3217,23 @@ liquid_keyboard:
   key_height_land: 40 #横屏模式按键高度
   single_width: 60    #single类型的按键宽度
   vertical_gap: 8     #纵向按键间隙
-  margin_x: 5       #左右按键间隙的1/2
+  margin_x: 2       #左右按键间隙的1/2
   fixed_key_bar: # 固定按键条
-    position: bottom  # 摆放位置（在滚动区域的……） top|bottom|left|right
+    position: right  # 摆放位置（在滚动区域的……） top|bottom|left|right
     keys: # 按键（显示名称为对应的label，不能放太多）
       - liquid_keyboard_exit
       - space1
       - BackSpace
       - Return2
-      - clipboard_window
+      - liquid_keyboard_clipboard
       - liquid_keyboard_tabs
-  keyboards: [emoji, math, ascii, cn, history, symbollist, list, ids, symbol, tabs, pinyin, script_symbols, jp, grease, rusa, korea, lation, yinbiao, unit, yanwenzi, combing, emoji_full]  #tab列表
+  keyboards: [emoji, math, ascii, cn, history, clipboard, collection, draft, symbollist, list, ids, symbol, tabs, pinyin, script_symbols, jp, grease, rusa, korea, lation, yinbiao, unit, yanwenzi, combing, emoji_full, candidate]  #tab列表
   tabs:
     name: 更多
     type: TABS
+  candidate:
+    name: 候选
+    type: CANDIDATE
   history:
     name: 常用
     type: HISTORY
@@ -3001,6 +3244,15 @@ liquid_keyboard:
     type: SINGLE
     name: 全emoji
     keys: "😀😃😄😁😆😅🤣😂🙂🙃🫠😉😊😇🥰😍🤩😘😗☺😚😙🥲😋😛😜🤪😝🤑🤗🤭🫢🫣🤫🤔🫡🤐🤨😐😑😶🫥😏😒🙄😬🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯🤠🥳🥸😎🤓🧐😕🫤😟🙁☹😮😯😲😳🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😤😡😠🤬😈👿💀☠💩🤡👹👺👻👽👾🤖😺😸😹😻😼😽🙀😿😾🙈🙉🙊💌💘💝💖💗💓💞💕💟❣💔❤🧡💛💚💙💜🤎🖤🤍💋💯💢💥💫💦💨🕳💬🗨🗯💭💤👋🤚🖐✋🖖🫱🫲🫳🫴👌🤌🤏✌🤞🫰🤟🤘🤙👈👉👆🖕👇☝🫵👍👎✊👊🤛🤜👏🙌🫶👐🤲🤝🙏✍💅🤳💪🦾🦿🦵🦶👂🦻👃🧠🫀🫁🦷🦴👀👁👅👄🫦👶🧒👦👧🧑👱👨🧔👩🧓👴👵🙍🙎🙅🙆💁🙋🧏🙇🤦🤷👮🕵💂🥷👷🫅🤴👸👳👲🧕🤵👰🤰🫃🫄🤱👼🎅🤶🦸🦹🧙🧚🧛🧜🧝🧞🧟🧌💆💇🚶🧍🧎🏃💃🕺🕴👯🧖🧗🤺🏇⛷🏂🏌🏄🚣🏊⛹🏋🚴🚵🤸🤼🤽🤾🤹🧘🛀🛌👭👫👬💏💑👪🗣👤👥🫂👣🏻🏼🏽🏾🏿🦰🦱🦳🦲🐵🐒🦍🦧🐶🐕🦮🐩🐺🦊🦝🐱🐈🦁🐯🐅🐆🐴🐎🦄🦓🦌🦬🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🦙🦒🐘🦣🦏🦛🐭🐁🐀🐹🐰🐇🐿🦫🦔🦇🐻🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🐧🕊🦅🦆🦢🦉🦤🪶🦩🦚🦜🐸🐊🐢🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🪸🐌🦋🐛🐜🐝🪲🐞🦗🪳🕷🕸🦂🦟🪰🪱🦠💐🌸💮🪷🏵🌹🥀🌺🌻🌼🌷🌱🪴🌲🌳🌴🌵🌾🌿☘🍀🍁🍂🍃🪹🪺🍄🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥🥑🍆🥔🥕🌽🌶🫑🥒🥬🥦🧄🧅🥜🫘🌰🍞🥐🥖🫓🥨🥯🥞🧇🧀🍖🍗🥩🥓🍔🍟🍕🌭🥪🌮🌯🫔🥙🧆🥚🍳🥘🍲🫕🥣🥗🍿🧈🧂🥫🍱🍘🍙🍚🍛🍜🍝🍠🍢🍣🍤🍥🥮🍡🥟🥠🥡🦀🦞🦐🦑🦪🍦🍧🍨🍩🍪🎂🍰🧁🥧🍫🍬🍭🍮🍯🍼🥛☕🫖🍵🍶🍾🍷🍸🍹🍺🍻🥂🥃🫗🥤🧋🧃🧉🧊🥢🍽🍴🥄🔪🫙🏺🌍🌎🌏🌐🗺🗾🧭🏔⛰🌋🗻🏕🏖🏜🏝🏞🏟🏛🏗🧱🪨🪵🛖🏘🏚🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪🕌🛕🕍⛩🕋⛲⛺🌁🌃🏙🌄🌅🌆🌇🌉♨🎠🛝🎡🎢💈🎪🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚒🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎🏍🛵🦽🦼🛺🚲🛴🛹🛼🚏🛣🛤🛢⛽🛞🚨🚥🚦🛑🚧⚓🛟⛵🛶🚤🛳⛴🛥🚢✈🛩🛫🛬🪂💺🚁🚟🚠🚡🛰🚀🛸🛎🧳⌛⏳⌚⏰⏱⏲🕰🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡☀🌝🌞🪐⭐🌟🌠🌌☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌀🌈🌂☂☔⛱⚡❄☃⛄☄🔥💧🌊🎃🎄🎆🎇🧨✨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗🎟🎫🎖🏆🏅🥇🥈🥉⚽⚾🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸🎣🤿🎽🎿🛷🥌🎯🪀🪁🎱🔮🪄🎮🕹🎰🎲🧩🧸🪅🪩🪆♠♥♦♣♟🃏🀄🎴🔫🎭🖼🎨🧵🪡🧶🪢👓🕶🥽🥼🦺👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🛍🎒🩴👞👟🥾🥿👠👡🩰👢👑👒🎩🎓🧢🪖⛑📿💄💍💎🔇🔈🔉🔊📢📣📯🔔🔕🎼🎵🎶🎙🎚🎛🎤🎧📻🎷🪗🎸🎹🎺🎻🪕🥁🪘📱📲☎📞📟📠🔋🪫🔌💻🖥🖨⌨🖱🖲💽💾💿📀🧮🎥🎞📽🎬📺📷📸📹📼🔍🔎🕯💡🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞📑🔖🏷💰🪙💴💵💶💷💸💳🧾💹✉📧📨📩📤📥📦📫📪📬📭📮🗳✏✒🖋🖊🖌🖍📝💼📁📂🗂📅📆🗒🗓📇📈📉📊📋📌📍📎🖇📏📐✂🗃🗄🗑🔒🔓🔏🔐🔑🗝💣🔨🪓⛏⚒🛠🗡⚔🪃🏹🛡🪚🔧🪛🔩⚙🗜⚖🦯🔗⛓🪝🧰🧲🪜⚗🧪🧫🧬🔬🔭📡💉🩸💊🩹🩼🩺🩻🚪🛗🪞🪟🛏🛋🪑🚽🪠🚿🛁🪤🪒🧴🧷🧹🧺🧻🪣🧼🫧🪥🧽🧯🛒🧿🪬🚬⚰🪦⚱🗿🪧🪪🏧🚮🚰♿🚹🚺🚻🚼🚾🛂🛃🛄🛅⚠🚸⛔🚫🚳🚭🚯🚱🚷📵🔞☢☣⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝🛐⚛🕉✡☸☯✝☦☪☮🕎🔯♈♉♊♋♌♍♎♏♐♑♒♓⛎🔀🔁🔂▶⏩⏭⏯◀⏪⏮🔼⏫🔽⏬⏸⏹⏺⏏🎦🔅🔆📶📳📴♀♂⚧✖➕➖➗🟰♾‼⁉❓❔❕❗〰💱💲⚕♻⚜🔱📛🔰⭕✅☑✔❌❎➰➿〽✳✴❇©®™🔟🔠🔡🔢🔣🔤🅰🆎🅱🆑🆒🆓ℹ🆔Ⓜ🆕🆖🅾🆗🅿🆘🆙🆚🈁🈂🈷🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗㊙🈺🈵🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼◻◾◽▪▫🔶🔷🔸🔹🔺🔻💠🔘🔳🔲🏁🚩🎌🏴🏳"
+  clipboard:
+    type: CLIPBOARD
+    name: 剪贴
+  collection:
+    type: COLLECTION
+    name: 收藏
+  draft:
+    type: DRAFT
+    name: 草稿
   math:   #tab名称
     type: SINGLE
     name: 数学
@@ -3079,7 +3331,7 @@ liquid_keyboard:
     name: "音标"
     keys: ["a:", "ɔ:", "ɜː", "i:", "u:", "ʌ", "ɒ", "ə", "ɪ", "ʊ", "e", "æ", "eɪ", "aɪ", "ɔɪ", "ɪə", "eə", "ʊə", "əʊ", "aʊ", "p", "t", "k", "f", "θ", "s", "b", "d", "g", "v", "ð", "z", "ʃ", "h", "ts", "tʃ", "j", "tr", "ʒ", "r", "dz", "dʒ", "dr", "w", "m", "n", "ŋ", "l"]
   yanwenzi:
-    type: SINGLE
+    type: VAR_LENGTH
     name: "颜文字"
     keys: ["⎛⎝≥⏝⏝≤⎠⎞", "^_^", "^ω^", "^o^", "~\\(≧▽≦)/~", "*^_^*", "↖(^ω^)↗", "(^o^)／", "(=^▽^=)", "=^_^=", "(*^ω^*)", "٩(๑^o^๑)۶", "o(￣▽￣)o", "Y(^_^)Y", "٩( 'ω' )و", "╰(*´︶`*)╯", "*罒▽罒*", "ヾ ^_^♪", "=￣ω￣=", "︿(￣︶￣)︿", "(´▽｀)ノ♪", "乁( ˙ ω˙乁)", "✧*｡٩(ˊωˋ*)و✧*｡", "～(￣▽￣～)(～￣▽￣)～", "QwQ", "(●—●)", "(๑• . •๑)", "ヾ(≧O≦)〃嗷~", "罒ω罒", "(｡ì _ í｡)", "(๑•ี_เ•ี๑)", "ㄟ(≧◇≦)ㄏ", "(*/ω＼*)", "●▽●", "٩(๑òωó๑)۶", "✺◟(∗❛ัᴗ❛ั∗)◞✺", "( σ'ω')σ", "♡＾▽＾♡", "(๑•̀ㅂ•́)و✧", "(ง •̀_•́)ง", "(｡･ω･｡)ﾉ♡", "(☆_☆)", "(๑°3°๑)", "_(•̀ω•́ 」∠)_", "♪～(´ε｀　)", "～(^з^)-☆", "(´∀｀)♡", "ლ(´ڡ`ლ)", "(＞﹏＜)", "T_T", "⊙︿⊙", "〒▽〒", "⊙﹏⊙", "π_π", "(｡•́︿•̀｡)", "(ToT)/~~~", "╯﹏╰", "ಥ_ಥ", "(╥╯^╰╥)", "(〃′o`)", "●﹏●", "( •̥́ ˍ •̀ू )", "(つд⊂)", "心塞(´-ωก`)", "(╥﹏╥)", "┭┮﹏┭┮", "（；´д｀）ゞ", "(´;︵;`)", "(。﹏。)", "┗( T﹏T )┛", "QAQ", "ヘ(_ _ヘ)", "╰（‵□′）╯", "(*￣︿￣)", ">o<", "(-`ェ´-怒)", "ヽ(‘⌒´メ)ノ", "(*｀Ω´*)v", "(｡•ˇ‸ˇ•｡)", "(怒｀Д´怒)", "٩(๑`^´๑)۶", "(;｀O´)o", "╰_╯", "(#｀皿´)<怒怒怒!!!", "<(｀^´)>", "（｀Δ´）！", "ψ(｀∇´)ψ", "(；′⌒`)", "s(・｀ヘ´・;)ゞ", "(▼皿▼#)", "￣へ￣", "←_←", "（╯‵□′）╯︵┴─┴", "（▼へ▼メ）", "☄ฺ(◣д◢)☄ฺ", "→_→", "⊙_⊙", "d(ŐдŐ๑)", "Σ( ° △ °|||)︴", "(((φ(◎ロ◎;)φ)))", "⊙▽⊙", "(๑ŐдŐ)b", "╭(°A°`)╮", "(๑òᆺó๑)", "⊙ω⊙", "Σ(っ °Д °;)っ", " (ﾟДﾟ≡ﾟдﾟ)!?", "( *・ω・)✄╰ひ╯", "(⊙x⊙;)", "┌(。Д。)┐", "(°ー°〃)", "︽⊙_⊙︽", "!!!∑(°Д°ノ)ノ", "(๑ŐдŐ)b☆d(ŐдŐ๑)", "Σ⊙▃⊙川", "ヽ(*。>Д<)o゜", "━((*′д｀)爻(′д｀*))━!!!!", "=_=", "╮(╯_╰)╭", "（︶︿︶）", "_(:з」∠)_", "@_@", "╮(╯▽╰)╭", "(＠￣ー￣＠)", "_(:3」∠❀)_", "눈_눈", "╭(╯ε╰)╮", "(ー_ー)!!", "_(:D)∠)_", "o_O", "╭(╯^╰)╮", "(；一_一)", "´_>`", "-_-#", "┑(￣Д ￣)┍", "≡￣﹏￣≡", "○|￣|_", "-_-||", "ㄟ( ▔, ▔ )ㄏ", "( ＿ ＿)ノ｜壁", "▄█▀█●"]
   combing:
@@ -3089,7 +3341,7 @@ liquid_keyboard:
   ascii:
     type: SINGLE
     name: 英文
-    keys: ",.?!:;/\\|*-+=^$`'\"^~@#%&()[]{}_"
+    keys: ",.?!:;/\\|*-+=$`'\"^~@#%&()[]{}_"
   ids:
     type: SINGLE
     name: IDS
@@ -3103,31 +3355,6 @@ liquid_keyboard:
     name: 符号表
     keys: [ 符号: '/fh', 电脑: '/dn', 象棋: '/xq', 麻将: '/mj', 骰子: '/sz', 扑克: '/pk', 天气: '/tq', 音乐: '/yy', 八卦: '/bg', 易经: '/lssg', 天体: '/tt',  星座: '/xz',  星号: '/xh',  方块: '/fk',  几何: '/jh',  箭头: '/jt',  数学: '/sx',  上标: '/sb',  下标: '/xb',  单位: '/dw',  货币: '/hb',  拼音: '/py',  注音: '/zy',  假名: '/jm',  片假: '/pjm',  韩文: '/hw',  希腊: '/xl',  希大: '/xld', 罗马:   '/lm',  罗大:   '/lmd', 俄语:   '/ey',  俄大:   '/eyd', 表情:  '/bq',  一: '/1',  二: '/2',  三: '/3',  四: '/4',  五: '/5',  六: '/6',  七: '/7',  八: '/8',  九: '/9',  零: '/0',  十: '/10',  分数: '/fs',  标点: '/bd',  偏旁: '/pp',  竖标:  '/bdz'  ]
 
-tool_bar:
-  button_spacing: 5 # 按钮间距
-  button_font: iconfont.ttf # 按钮字体
-  back_style: "ic@arrow-left" # 左侧返回按钮样式
-
-  hide_button: &hide_button
-    foreground:
-      style: "ic@keyboard_close"
-      normal: candidate_text_color
-    action: Hide
-
-  emoji_button: &emoji_button
-    foreground:
-      style: "ic@emoticon"
-    # 前景样式可以为空，使用默认样式，按钮将显示为 action 的 label
-    action: liquid_keyboard_emoji
-
-  clipboard_button: &clipboard_button
-    foreground:
-      style: "ic@clipboard"
-    action: clipboard_window
-
-  # 右侧按钮列表（从右向左排列）
-  buttons: [ *hide_button, *emoji_button, *clipboard_button ]
-
 
 preset_keys:
   Shift: {label: "↑", send: Shift_L}
@@ -3140,6 +3367,7 @@ preset_keys:
   DefaultKeyboard: {label: 五笔, send: Eisu_toggle, select: default}
   DefaultKeyboard2: {label: 中, send: Eisu_toggle, select: default}
   Hide: {label: " ", send: BACK}   # 收起键盘
+  Mode_switch: {toggle: ascii_mode, functional: false, send: Mode_switch, states: [ En, 中 ]}
 
   # 编辑
   Return: {label: Enter, preview: '↩', send: Return}
@@ -3158,7 +3386,6 @@ preset_keys:
   liquid_keyboard_tabs: { label: 更多, send: function, command: liquid_keyboard, option: "更多" }
   liquid_keyboard_emoji: { label: 🙂, send: function, command: liquid_keyboard, option: "emoji" }
   liquid_keyboard_clipboard: { label: ⏍, send: function, command: liquid_keyboard, option: "剪贴" }
-  clipboard_window: { label: "剪贴", send: function, command: "clipboard_window", option: '0' } #0剪贴板，1收藏夹
 
   # 虚拟第6行设置
   IME_switch: {label: '⌨', functional: false, send: LANGUAGE_SWITCH}
