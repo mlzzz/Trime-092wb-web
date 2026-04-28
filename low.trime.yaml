@@ -3133,7 +3133,6 @@ preset_keys:
   Shift: {label: "↑", send: Shift_L}
   number: {label: 123, send: Eisu_toggle, select: number}
   english: {label: "abc", send: Eisu_toggle, select: english}
-  english2: {label: "En", send: Eisu_toggle, select: english2}
   symbols: {label: "符", send: Eisu_toggle, select: symbols}
   .symbols: {label: "更多", send: Eisu_toggle, select: .symbols} #默认的符号键盘
   .number: {label: 123, send: Eisu_toggle, select: .number} #默认的9宫格数据键盘

@@ -58,7 +58,7 @@ style:
   vertical_correction: -5
   key_height: *jpgd2 #键高
   # 引用的键盘
-  keyboards: [default, number, symbols, .symbols, english, english2, .number, symbols01, symbols02, symbols11, symbols12, symbols13, symbols14, symbols21, symbols22, symbols31, symbols32, symbols33, symbols34, symbols35, symbols36, symbols41, symbols42, symbols43, symbols44, symbols51, symbols52, symbols53, symbols54, symbols55, symbols56, symbols61, symbols62, symbols63, symbols64, symbols65, symbols71, symbols72, symbols73, symbols74, symbols75, symbols81, symbols82, symbols83, symbols91, symbols92, symbols93, symbolsA1, symbolsA2, symbolsA3, symbolsA4, symbolsA5, symbolsB1, symbolsB2, symbolsB3, symbolsC1, symbolsC2, symbolsC3, symbolsC4, symbolsC5, symbolsD1, symbolsD2] #键盘配置,所有跳转键盘都需要在这里配置，不然会出错
+  keyboards: [default, number, symbols, .symbols, .number, symbols01, symbols02, symbols11, symbols12, symbols13, symbols14, symbols21, symbols22, symbols31, symbols32, symbols33, symbols34, symbols35, symbols36, symbols41, symbols42, symbols43, symbols44, symbols51, symbols52, symbols53, symbols54, symbols55, symbols56, symbols61, symbols62, symbols63, symbols64, symbols65, symbols71, symbols72, symbols73, symbols74, symbols75, symbols81, symbols82, symbols83, symbols91, symbols92, symbols93, symbolsA1, symbolsA2, symbolsA3, symbolsA4, symbolsA5, symbolsB1, symbolsB2, symbolsB3, symbolsC1, symbolsC2, symbolsC3, symbolsC4, symbolsC5, symbolsD1, symbolsD2] #键盘配置,所有跳转键盘都需要在这里配置，不然会出错
 
 fallback_colors:
   candidate_text_color: text_color
@@ -246,17 +246,17 @@ preset_keyboards:
     round_corner: *jpgd4
     keys: 
       # 第一行
-      - {click: '1', label: "1", long_click: "！"}
+      - {click: '1', label: "1", long_click: "!"}
       - {click: '2', label: "2", long_click: "@"}
       - {click: '3', label: "3", long_click: "#"}
-      - {click: '4', label: "4", long_click: "￥"}
+      - {click: '4', label: "4", long_click: "$"}
       - {click: '5', label: "5", long_click: "%"}
-      - {click: '6', label: "6", long_click: "……"}
+      - {click: '6', label: "6", long_click: "^"}
       - {click: '7', label: "7", long_click: "&"}
       - {click: '8', label: "8", long_click: "*"}
-      - {click: '9', label: "9", long_click: "（"}
-      - {click: '0', label: "0", long_click: "）"}  
-      - {click: '-', label: "-", long_click: "——"}  
+      - {click: '9', label: "9", long_click: "("}
+      - {click: '0', label: "0", long_click: ")"}  
+      - {click: '-', label: "-", long_click: "_"}  
       - {click: '=', label: "=", long_click: "+"}  
 
       # 第二行
@@ -281,10 +281,10 @@ preset_keyboards:
       - {click: g, label: "G"}
       - {click: h, label: "H", long_click: "chaifen"}
       - {click: j, label: "J", long_click: "zhujie"}
-      - {click: k, label: "K"}
-      - {click: l, label: "L"}
-      - {click: ";", long_click: "："}  
-      - {click: "'", long_click: "“”"}  
+      - {click: k, label: "K", long_click: "\\"}
+      - {click: l, label: "L", long_click: "|"}
+      - {click: ";", long_click: ":"}  
+      - {click: "'", long_click: '""'}  
     #  - {width: 4.4}
       # 第四行
       - {click: Mode_switch, width: 10, key_back_color: gnj, key_text_color: gnz}
@@ -292,145 +292,18 @@ preset_keyboards:
       - {click: x, label: "X", long_click: "cut"}
       - {click: c, label: "C", long_click: "copy"}
       - {click: v, label: "V", long_click: "paste"}
-      - {click: b, label: "B"}
-      - {click: n, label: "N"}
+      - {click: b, label: "B", long_click: "~"}
+      - {click: n, label: "N", long_click: "`"}
       - {click: m, label: "M", long_click: "emoji"}
-      - {click: ",", long_click: "《"}
-      - {click: ".", long_click: "》"}
-      - {click: "/", long_click: "？"}
-      # 第五行
-      - {click: K_symbols123, width: 15, key_back_color: gnj, key_text_color: gnz}
-      - {click: Shift, label: "↑", swipe_up: "！", width: 15, key_back_color: gnj, key_text_color: gnz}
-      - {click: space, width: 40}
-      - {click: "BackSpace", label: "⌫", swipe_up: "ClearH", width: 15, key_back_color: gnj, key_text_color: gnz}
-      - {click: Return, width: 15, key_back_color: gnj, key_text_color: gnz}
-      # 虚拟第六行（抬高行）
-      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
-
-  english2:
-    name: "英文键盘2"
-    ascii_mode: 1
-    author: "往风"
-    width: 8.34 # 键盘未指定键宽时默认值
-    height: *jpgd2
-    horizontal_gap: *jpgd10
-    vertical_gap: *jpgd9
-    round_corner: *jpgd4
-    keys: 
-      # 第一行
-      - {click: '1', label: "1", long_click: "!"}
-      - {click: '2', label: "2", long_click: "@"}
-      - {click: '3', label: "3", long_click: "#"}
-      - {click: '4', label: "4", long_click: "$"}
-      - {click: '5', label: "5", long_click: "%"}
-      - {click: '6', label: "6", long_click: "^"}
-      - {click: '7', label: "7", long_click: "&"}
-      - {click: '8', label: "8", long_click: "*"}
-      - {click: '9', label: "9", long_click: "("}
-      - {click: '0', label: "0", long_click: ")"}  
-      - {click: '-', label: "-", long_click: "_"}  
-      - {click: '=', label: "=", long_click: "+"}  
-
-      # 第二行
-      - {click: q, swipe_up: 1}
-      - {click: w, swipe_up: 2}
-      - {click: e, swipe_up: 3}
-      - {click: r, swipe_up: 4}
-      - {click: t, swipe_up: 5}
-      - {click: y, swipe_up: 6}
-      - {click: u, swipe_up: 7}
-      - {click: i, swipe_up: 8}
-      - {click: o, swipe_up: 9}
-      - {click: p, swipe_up: 0}
-      - {click: "[", long_click: "{"}
-      - {click: "]", long_click: "}"}
-      # 第三行
-      - {width: 4.4}
-      - {click: a, long_click: "select_all"}
-      - {click: s}
-      - {click: d}
-      - {click: f}
-      - {click: g}
-      - {click: h}
-      - {click: j}
-      - {click: k}
-      - {click: l}
-      - {click: ";", long_click: ":"}  
-      - {click: "'", long_click: '"'}  
-  #    - {width: 4.4}
-      # 第四行
-      - {click: DefaultKeyboard2, width: 10, key_back_color: gnj, key_text_color: gnz}
-      - {click: z}
-      - {click: x, long_click: "cut"}
-      - {click: c, long_click: "copy"}
-      - {click: v, long_click: "paste"}
-      - {click: b}
-      - {click: n}
-      - {click: m}
       - {click: ",", long_click: "<"}
       - {click: ".", long_click: ">"}
       - {click: "/", long_click: "?"}
       # 第五行
       - {click: K_symbols123, width: 15, key_back_color: gnj, key_text_color: gnz}
-      - {click: Shift, label: "↑", swipe_up: "！", width: 15, key_back_color: gnj, key_text_color: gnz}
+      - {click: Shift, label: "↑", swipe_up: ".", width: 15, key_back_color: gnj, key_text_color: gnz}
       - {click: space, width: 40}
       - {click: "BackSpace", label: "⌫", swipe_up: "ClearH", width: 15, key_back_color: gnj, key_text_color: gnz}
       - {click: Return, width: 15, key_back_color: gnj, key_text_color: gnz}
-      # 虚拟第六行（抬高行）
-      - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
-
-
-  english:
-    name: "英文键盘"
-    ascii_mode: 1
-    author: "往风"
-    height: *jpgd2
-    width: 10 # 键盘未指定键宽时默认值
-    horizontal_gap: *jpgd10
-    vertical_gap: *jpgd9
-    round_corner: *jpgd4
-    keys: 
-      - {click: q, swipe_up: "1",  swipe_down: "一"}
-      - {click: w, swipe_up: "2",  swipe_down: "二"}
-      - {click: e, swipe_up: "3",  swipe_down: "三"}
-      - {click: r, swipe_up: "4",  swipe_down: "四"}
-      - {click: t, swipe_up: "5",  swipe_down: "五"}
-      - {click: y, swipe_up: "6",  swipe_down: "六"}
-      - {click: u, swipe_up: "7",  swipe_down: "七"}
-      - {click: i, swipe_up: "8",  swipe_down: "八"}
-      - {click: o, swipe_up: "9",  swipe_down: "九"}
-      - {click: p, swipe_up: "0",  swipe_down: "〇"}
-      - {width: 5}
-      - {click: a, swipe_up: "～", swipe_down: "~"}
-      - {click: s, swipe_up: "／", swipe_down: "/"}
-      - {click: d, swipe_up: "：", swipe_down: ":"}
-      - {click: f, swipe_up: "；", swipe_down: ";"}
-      - {click: g, swipe_up: "（", swipe_down: "("}
-      - {click: h, swipe_up: "）", swipe_down: ")"}
-      - {click: j, swipe_up: "@",  swipe_down: "@"}
-      - {click: k, swipe_up: "“",  swipe_down: '"'}
-      - {click: l, swipe_up: "”",  swipe_down: "'"}
-      - {width: 5}
-      - {click: Shift, width: 14}
-      - {width: 1}
-      - {click: z, swipe_up: "-",  swipe_down: "-"}
-      - {click: x, swipe_up: "_",  swipe_down: "_"}
-      - {click: c, swipe_up: "#",  swipe_down: "#"}
-      - {click: v, swipe_up: "？",  swipe_down: "?"}
-      - {click: b, swipe_up: "！",  swipe_down: "!"}
-      - {click: n, swipe_up: "，",  swipe_down: ","}
-      - {click: m, swipe_up: "。",  swipe_down: "."}
-      - {width: 1}
-      - {click: BackSpace, width: 14}
-      - {click: symbols, width: 14}
-      - {click: .number, width: 12}
-      - {click: space, width: 42}
-      - {click: DefaultKeyboard2, width: 12}
-      - {click: Return, width: 20}
       # 虚拟第六行（抬高行）
       - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
       - {click: "Hide", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
@@ -586,25 +459,25 @@ preset_keyboards:
     round_corner: *jpgd4
     width: 20 # 键盘未指定键宽时默认值
     keys:
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: "+"}
+      - {click: "①"}
+      - {click: "②"}
+      - {click: "③"}
       - {click: K_back, key_back_color: gnj, key_text_color: gnz}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: "-"}
+      - {click: "④"}
+      - {click: "⑤"}
+      - {click: "⑥"}
       - {click: K_symbols01, key_back_color: gnj, key_text_color: gnz}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: "*"}
+      - {click: "⑦"}
+      - {click: "⑧"}
+      - {click: "⑨"}
       - {click: Return1, key_back_color: gnj, key_text_color: gnz}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: "/"}
+      - {click: "⑩"}
+      - {click: "⑪"}
+      - {click: "⑫"}
       - {click: BackSpace, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols0g, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols10, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -770,13 +643,13 @@ preset_keyboards:
       - {click: K_symbols13, key_back_color: gnj, key_text_color: gnz}
       - {click: "Ⓨ"}
       - {click: "Ⓩ"}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
       - {click: K_symbols14x, key_back_color: gnj, key_text_color: gnz}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols00, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols10, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -1321,10 +1194,10 @@ preset_keyboards:
       - {click: K_symbols44x, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: "😠"}
       - {click: "🌝"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols00, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols10, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -2422,11 +2295,11 @@ preset_keyboards:
       - {click: "ㄘ"}
       - {click: K_symbols93x, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: "ㄙ"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols70, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols80, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -2614,9 +2487,9 @@ preset_keyboards:
       - {click: "Э"}
       - {click: "Ю"}
       - {click: "Я"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: K_symbolsA3, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: "а"}
       - {click: "б"}
@@ -2679,9 +2552,9 @@ preset_keyboards:
       - {click: "э"}
       - {click: "ю"}
       - {click: "я"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols70, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols80, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -2767,9 +2640,9 @@ preset_keyboards:
       - {click: "Š"}
       - {click: "Ÿ"}
       - {click: "Œ"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: K_symbolsB1, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: "à"}
       - {click: "á"}
@@ -2832,9 +2705,9 @@ preset_keyboards:
       - {click: "š"}
       - {click: "ÿ"}
       - {click: "œ"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols70, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols80, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -2883,9 +2756,9 @@ preset_keyboards:
       - {click: "ㅞ"}
       - {click: "ㅟ"}
       - {click: "ㅢ"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols70, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols80, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -2932,11 +2805,11 @@ preset_keyboards:
       - {click: "ㅆ"}
       - {click: K_symbolsC3x, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: "ㅉ"}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols70, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols80, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -3016,8 +2889,8 @@ preset_keyboards:
       - {click: "㉹"}
       - {click: "㉺"}
       - {click: "㉻"}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
       - {click: K_back, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: "㈀"}
       - {click: "㈁"}
@@ -3074,22 +2947,22 @@ preset_keyboards:
       - {click: "㈙"}
       - {click: "㈚"}
       - {click: "㈛"}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
       - {click: K_symbolsC4, width: 20, key_back_color: gnj, key_text_color: gnz}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: K_symbolsC5x, width: 20, key_back_color: gnj, key_text_color: gnz}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
-      - {click: ""}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
+      - {click: " "}
       - {click: BackSpace, width: 20, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols70, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       - {click: K_symbols80, width: 12.5, key_back_color: gnj, key_text_color: gnz}
@@ -3359,8 +3232,6 @@ liquid_keyboard:
 preset_keys:
   Shift: {label: "↑", send: Shift_L}
   number: {label: 123, send: Eisu_toggle, select: number}
-  english: {label: "abc", send: Eisu_toggle, select: english}
-  english2: {label: "En", send: Eisu_toggle, select: english2}
   symbols: {label: "符", send: Eisu_toggle, select: symbols}
   .symbols: {label: "更多", send: Eisu_toggle, select: .symbols} #默认的符号键盘
   .number: {label: 123, send: Eisu_toggle, select: .number} #默认的9宫格数据键盘
