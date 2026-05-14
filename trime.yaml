@@ -306,7 +306,7 @@ preset_keyboards:
       - {click: Return, width: 15, key_back_color: gnj, key_text_color: gnz}
       # 虚拟第六行（抬高行）
       - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: "space", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "space", height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
       - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   number:
