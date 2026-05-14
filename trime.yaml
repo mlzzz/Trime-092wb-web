@@ -704,7 +704,7 @@ preset_keyboards:
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       # 虚拟第六行（抬高行）
       - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: "space", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "space", label: ' ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
       - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols22:
@@ -747,7 +747,7 @@ preset_keyboards:
       - {click: K_symbols0y, width: 12.5, key_back_color: gnj, key_text_color: gnz}
       # 虚拟第六行（抬高行）
       - {click: IME_switch, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc}
-      - {click: "space", label: '  ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
+      - {click: "space", label: ' ', height: 70, width: 60, key_back_color: bc, hilited_key_back_color: bc}
       - {click: liquid_keyboard_clipboard, height: 70, width: 20, key_back_color: bc, hilited_key_back_color: bc, key_text_color: gnz}
 
   symbols31:
@@ -3250,6 +3250,7 @@ preset_keys:
   # 剪贴板
   liquid_keyboard_exit: {label: 返回, send: function, command: liquid_keyboard, option: "-1"}  #退出liquidkeyboard
   space1: {repeatable: false, label: '空格', functional: false, send: space}
+  space: {repeatable: false, label: ' ', functional: false, send: space}
   BackSpace: {label: ⌫, preview: '⇦', repeatable: true, functional: false, send: BackSpace}
   Return2: {label: 回车, send: Return }
   liquid_keyboard_switch: { label: 更多, send: function, command: liquid_keyboard, option: "特殊" }
